@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Hello world"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <EditText
+                android:id="@+id/etLocationsearch"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:hint="Enter Address"
+                android:maxLines="1"/>
+
+            <Button
+                android:id="@+id/btnLocationSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Search"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/mapboxWhite"/>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.mapbox.mapboxsdk.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                mapbox:mapbox_cameraTargetLat="-29.8579"
+                mapbox:mapbox_cameraTargetLng="31.0284"
+                mapbox:mapbox_cameraZoom="12"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="-194dp">
+
+            </com.mapbox.mapboxsdk.maps.MapView>
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="282dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:enabled="false"
+                android:text="Directions"
+                android:textColor="@color/mapboxWhite"
+                mapbox:layout_constraintBottom_toBottomOf="@+id/mapView"
+                mapbox:layout_constraintEnd_toEndOf="parent" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                mapbox:backgroundTint="@color/cardview_dark_background"
+                mapbox:layout_constraintBottom_toBottomOf="parent"
+                mapbox:layout_constraintEnd_toStartOf="@+id/startButton"
+                mapbox:layout_constraintStart_toStartOf="parent"
+                mapbox:srcCompat="@android:drawable/ic_menu_search" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

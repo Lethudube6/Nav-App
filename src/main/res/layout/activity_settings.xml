@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pngtree_blue_sky_white_clouds_mobile_phone_end_h5_background_image_126581"
+    tools:context=".SettingsActivity">
+
+
+    <Button
+        android:id="@+id/btnSaveS"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCancelS"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="509dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="32dp"
+        android:text="Save Details" />
+
+    <Button
+        android:id="@+id/btnCancelS"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="95dp"
+        android:text="Delete" />
+
+    <EditText
+        android:id="@+id/Addt"
+        android:layout_width="175dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/etTypeS"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="227dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="46dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/etTypeS2"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="230dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="313dp" />
+
+    <Spinner
+        android:id="@+id/etTypeS"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="226dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="402dp" />
+
+    <TextView
+        android:id="@+id/ChooseT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/SaveT"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="189dp"
+        android:layout_marginBottom="57dp"
+        android:text="Choose Transport"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/AddT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ChooseT"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="189dp"
+        android:layout_marginBottom="39dp"
+        android:text="Add Trip "
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/SaveT"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="310dp"
+        android:text="Save Trip"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="241dp"
+        android:layout_height="69dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="91dp"
+        android:text="Settings"
+        android:textSize="30sp" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Tour_Guide</string>
+    <!--Mapbox Resources-->
+    <string name="access_token">pk.eyJ1IjoiYmVlMTIiLCJhIjoiY2tnbzlmem55MDA1ZTJ6bGJoeHRvMDMzeSJ9.O5vxYsDHyDk-hvDSqPjUiQ</string>
+    <string name="start_navigation">Start Navigation</string>
+    <string name="start_navigating">START NAVIGATION</string>
+    <string name="login">LOGIN</string>
+    <string-array name="measurement_type">
+        <item>METRIC\'S SYSTEM(KM)</item>
+        <item>IMPERIAL SYSTEM(M)</item>
+    </string-array>
+    <string-array name="transport_type">
+        <item>DRIVING</item>
+        <item>WALKING</item>
+        <item>PUBLIC TRANSPORT</item>
+    </string-array>
+    <string-array name="save_history">
+        <item>YES</item>
+        <item>NO</item>
+    </string-array>
+</resources>

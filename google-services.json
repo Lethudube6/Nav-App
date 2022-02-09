@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "130826469912",
+    "firebase_url": "https://my-pocket-navv.firebaseio.com",
+    "project_id": "my-pocket-navv",
+    "storage_bucket": "my-pocket-navv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130826469912:android:71c33cba67e7398ffdb96d",
+        "android_client_info": {
+          "package_name": "com.example.mypocketnavv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130826469912-ob0n886tfq7somfa2ji792vvv2os3uq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgbyIGyxkbZtI2uOQuMo5rt8NyVTXg42k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130826469912-ob0n886tfq7somfa2ji792vvv2os3uq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

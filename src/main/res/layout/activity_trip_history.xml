@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pngtree_blue_sky_white_clouds_mobile_phone_end_h5_background_image_126581"
+    tools:context=".TripHistoryActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tue Nov 26 05:41:23 GMT +2:00 2019"
+            android:textStyle="bold"
+           android:textSize="18sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Departure Address: DR what what"
+            android:drawableLeft="@drawable/ic_user_location_custom"/>
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Full Address: 12 rt dfg"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Destination Address: What street"
+            android:drawableLeft="@drawable/ic_user_location_custom"/>
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Address: 1232 ddf"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="        Details of My Trip History"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/lv_tripHistory"
+            android:layout_width="match_parent"
+            android:layout_height="314dp" />
+    </LinearLayout>
+
+</RelativeLayout>
